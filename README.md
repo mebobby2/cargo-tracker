@@ -217,6 +217,20 @@ An adaptor in the hexagonal architectural pattern could either be an Inbound Ada
 
 To summarize, a “Domain Model” needs a set of supporting services also known as “Domain Model Services.” These supporting services enable external clients to consume our domain model and at the same time also enable the domain model to store and publish states of the sub-domain in multiple repositories. These supporting services are modeled using the Hexagonal Architectural Pattern wherein these services are mapped either as an “inbound/outbound port” or an “inbound/outbound adaptor.” The hexagonal architectural pattern enables the “Domain Model” to be independent of these supporting services.
 
+## Monoliths
+The main focus points for a monolithic architecture are the following:
+* Strong transactional consistency
+* Easier maintainability
+* Centralized data management
+* Shared responsibilities
+
+The microservices architectural style provides teams with
+a high degree of independence in terms of development, testing, and deployment of applications; but due care needs to be taken before you start dismantling a monolith and move it to a microservices-based architecture. Microservices are essentially distributed systems which in turn require a lot of investment in automation, monitoring, and compromises for consistency. Monoliths have considerable value for complex business applications.
+
+Structuring these Bounded Contexts as separate modules within a monolith and using domain events to communicate between them help us achieve loose coupling enabling 'true modularity' or termed 'modular monoliths'. It helps maintain a level of independence which helps us transition to microservices down the line if required.
+
+
+
 
 
 
@@ -233,6 +247,6 @@ To summarize, a “Domain Model” needs a set of supporting services also known
 
 
 ## Upto
-Page 58
+Page 67
 
-Cargo Tracker as a Modular Monolith
+Aggregate Class Implementation
