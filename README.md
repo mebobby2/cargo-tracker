@@ -229,20 +229,8 @@ a high degree of independence in terms of development, testing, and deployment o
 
 Structuring these Bounded Contexts as separate modules within a monolith and using domain events to communicate between them help us achieve loose coupling enabling 'true modularity' or termed 'modular monoliths'. It helps maintain a level of independence which helps us transition to microservices down the line if required.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## Source Code
+https://github.com/Apress/practical-ddd-in-enterprise-java
 
 
 
@@ -250,3 +238,5 @@ Structuring these Bounded Contexts as separate modules within a monolith and usi
 Page 67
 
 Aggregate Class Implementation
+
+Before that: copy source code chapter 3 folder
